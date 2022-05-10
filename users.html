@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Пользователи</title>
+    </head>
+    <body>
+        <h1>Пользователи</h1>
+
+        <a href="/create-user">Создать пользователя</a>
+
+        <ul >
+            {% for user in users %}
+            <li>
+                <a href="/user/{{ user.id }}">
+                    <p>{{ user.id }}. {{ user.surname }} {{ user.name }}</p>
+                    <p>Age: {{ user.age }}</p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
