@@ -2,10 +2,6 @@
 
 ## Structure
 
-- [server](./server)
-
-  Contains the app's api
-
 - [main.py](./main.py)
 
   Entry point of the application
